@@ -17,8 +17,6 @@ match priority:
 
 if time_bound == 'yes':
     reminder += " that requires immediate action."
-    print(reminder)
-
 else:
-
-    print(f"Note: '{task}' is a '{priority}' priority task. Consider completing it when you have free time.")
+    reminder += (". Consider completing it when you have free time.")
+print(reminder)
