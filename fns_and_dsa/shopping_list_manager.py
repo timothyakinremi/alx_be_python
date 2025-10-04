@@ -1,10 +1,7 @@
-shopping_list = []  # start with an empty list
-
-
 def display_menu():
     """Display the shopping list menu options."""
-    print("\n===== Shopping List Manager =====")
-    print("1. Add an item")
+    print("Shopping List Manager")
+    print("1. Add item")
     print("2. Remove an item")
     print("3. View shopping list")
     print("4. Exit")
