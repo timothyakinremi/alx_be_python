@@ -7,7 +7,6 @@ class BankAccount:
         """Deposit money into the account."""
         if amount > 0:
             self.__account_balance += amount
-            print(f"Deposited: ${amount:.1f}")
             return True
         return False
 
