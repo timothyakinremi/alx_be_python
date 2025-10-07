@@ -13,7 +13,7 @@ def safe_divide(numerator, denominator):
         num = float(numerator)
         den = float(denominator)
         result = num / den
-        return f"The result of dividing {num} by {den} is {result:.2f}"
+        return f"The result of division is {result:.2f}"
     except ZeroDivisionError:
         return "Error: Cannot divide by zero."
     except ValueError:
