@@ -1,12 +1,18 @@
 def safe_divide(numerator, denominator):
-    # Safely dividing two numbers with error handling.
+    """
+    Safely divides two numbers with error handling.
     
+    Args:
+        numerator: The number to be divided (int, float, or numeric string).
+        denominator: The number to divide by (int, float, or numeric string).
+    
+    Returns:
+        str: A formatted message showing the division result or an error message.
+    """
     try:
         num = float(numerator)
         den = float(denominator)
-        
-        # Perform division operation
-        result = num/den
+        result = num / den
         return f"The result of dividing {num} by {den} is {result:.2f}"
     except ZeroDivisionError:
         return "Error: Division by zero is not allowed."
