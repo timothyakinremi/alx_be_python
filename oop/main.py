@@ -3,15 +3,14 @@
 from library_system import Book, EBook, PrintBook, Library
 
 def main():
-    # Create a library
     library = Library()
 
-    # Create some books
-    book1 = Book("Things Fall Apart", "Chinua Achebe")
-    ebook1 = EBook("Python Programming", "Guido van Rossum", 5)
-    printbook1 = PrintBook("Introduction to Algorithms", "Thomas H. Cormen", 1312)
+    # Create books
+    book1 = Book("Pride and Prejudice", "Jane Austen")
+    ebook1 = EBook("Snow Crash", "Neal Stephenson", 500)
+    printbook1 = PrintBook("The Catcher in the Rye", "J.D. Salinger", 234)
 
-    # Add books to the library
+    # Add books
     library.add_book(book1)
     library.add_book(ebook1)
     library.add_book(printbook1)
